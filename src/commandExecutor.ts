@@ -1,6 +1,6 @@
 import * as InteropLib from 'cardano-hw-interop-lib'
 import TransportNodeHid from '@ledgerhq/hw-transport-node-hid-noevents'
-import { TransportNodeUSB } from '@keystonehq/hw-transport-nodeusb';
+import {TransportNodeUSB} from '@keystonehq/hw-transport-nodeusb'
 import {
   CryptoProvider,
   NativeScriptDisplayFormat,
@@ -45,7 +45,7 @@ import {CIP36_VOTING_PURPOSE_CATALYST} from './constants'
 import {validateWitnessing} from './crypto-providers/witnessingValidation'
 import {validateTxBeforeWitnessing} from './transaction/transactionValidation'
 import {Cbor, CVoteDelegation} from './basicTypes'
-import { KeystoneCryptoProvider } from './crypto-providers/keystoneCryptoProvider'
+import {KeystoneCryptoProvider} from './crypto-providers/keystoneCryptoProvider'
 
 const promiseTimeout = <T>(promise: Promise<T>, ms: number): Promise<T> => {
   const timeout: Promise<T> = new Promise((resolve, reject) => {
@@ -62,8 +62,13 @@ const getCryptoProvider = async (): Promise<CryptoProvider> => {
   const ledgerPromise = async () =>
     LedgerCryptoProvider(await TransportNodeHid.create())
   const trezorPromise = async () => await TrezorCryptoProvider()
-  const keystonePromise = async () => await KeystoneCryptoProvider(await TransportNodeUSB.connect())
-  const cryptoProviderPromise = Promise.any([ledgerPromise(), trezorPromise(), keystonePromise()])
+  const keystonePromise = async () =>
+    await KeystoneCryptoProvider(await TransportNodeUSB.connect())
+  const cryptoProviderPromise = Promise.any([
+    ledgerPromise(),
+    trezorPromise(),
+    keystonePromise(),
+  ])
 
   try {
     return await promiseTimeout(cryptoProviderPromise, 5000)
