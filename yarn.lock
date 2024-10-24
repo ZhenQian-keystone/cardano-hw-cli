@@ -1001,17 +1001,17 @@
   resolved "https://registry.npmjs.org/@keystonehq/hw-transport-error/-/hw-transport-error-0.0.2.tgz#10a3f69b8a80e4d3fec514b4abcdae6f595770ae"
   integrity sha512-j6rOJU277Cmq9oBiFjtVHJhUZ/gELGYGZMUXBlAom1WyK8pNrD3+I8kCVGp5Ss5oB+Zqo7Az5xCx/z+0i+Y40A==
 
-"@keystonehq/hw-transport-nodeusb@^0.1.0-alpha.0":
-  version "0.1.0-alpha.0"
-  resolved "https://registry.npmjs.org/@keystonehq/hw-transport-nodeusb/-/hw-transport-nodeusb-0.1.0-alpha.0.tgz#01eec4863562bde688c6a2fd4c25d5efa7a12f52"
-  integrity sha512-S+Yx9tcvQOOumQdC+TOvWRNCWI0yFOeW7Uik2v/yjx4sz/KTT5MbQbc88rC30A8az50msbsFkuawQv+sduUdKA==
+"@keystonehq/hw-transport-nodeusb@^0.1.0-alpha.1":
+  version "0.1.0-alpha.1"
+  resolved "https://registry.npmjs.org/@keystonehq/hw-transport-nodeusb/-/hw-transport-nodeusb-0.1.0-alpha.1.tgz#f246af10c2b7d6bf465f175c3a9505701e9ec586"
+  integrity sha512-dlvJz/u388WO8ULVQXDHCZeLxtfemPHMlwWwtOn68TmqbtcqVWQ3udrdyjT02pNYXFmr2kBMMuD5ceDyhkrEUw==
   dependencies:
-    "@keystonehq/hw-transport-error" "workspace:^"
-    "@keystonehq/hw-transport-usb" "workspace:^"
+    "@keystonehq/hw-transport-error" "^0.0.2"
+    "@keystonehq/hw-transport-usb" "^0.1.0-alpha.0"
     buffer "^6.0.3"
     usb "^2.14.0"
 
-"@keystonehq/hw-transport-usb@^0.1.0-alpha.0", "@keystonehq/hw-transport-usb@workspace:^":
+"@keystonehq/hw-transport-usb@^0.1.0-alpha.0":
   version "0.1.0-alpha.0"
   resolved "https://registry.npmjs.org/@keystonehq/hw-transport-usb/-/hw-transport-usb-0.1.0-alpha.0.tgz#3d4e5a359ceb16bcc3a83badd311b0ca400c4e33"
   integrity sha512-bXRicybH9Mx1iIq7macgc//Lisqeytu51WUJVXCS49B8msfR+thJtpYs78FgEH9jBX5ufwAB7Mwo0qq3jKjLHw==
