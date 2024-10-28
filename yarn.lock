@@ -1001,7 +1001,7 @@
   resolved "https://registry.npmjs.org/@keystonehq/hw-transport-error/-/hw-transport-error-0.0.2.tgz#10a3f69b8a80e4d3fec514b4abcdae6f595770ae"
   integrity sha512-j6rOJU277Cmq9oBiFjtVHJhUZ/gELGYGZMUXBlAom1WyK8pNrD3+I8kCVGp5Ss5oB+Zqo7Az5xCx/z+0i+Y40A==
 
-"@keystonehq/hw-transport-nodeusb@^0.1.0-alpha.1":
+"@keystonehq/hw-transport-nodeusb@0.1.0-alpha.1":
   version "0.1.0-alpha.1"
   resolved "https://registry.npmjs.org/@keystonehq/hw-transport-nodeusb/-/hw-transport-nodeusb-0.1.0-alpha.1.tgz#f246af10c2b7d6bf465f175c3a9505701e9ec586"
   integrity sha512-dlvJz/u388WO8ULVQXDHCZeLxtfemPHMlwWwtOn68TmqbtcqVWQ3udrdyjT02pNYXFmr2kBMMuD5ceDyhkrEUw==
