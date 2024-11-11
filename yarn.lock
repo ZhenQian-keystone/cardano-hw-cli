@@ -1001,13 +1001,13 @@
   resolved "https://registry.npmjs.org/@keystonehq/hw-transport-error/-/hw-transport-error-0.0.2.tgz#10a3f69b8a80e4d3fec514b4abcdae6f595770ae"
   integrity sha512-j6rOJU277Cmq9oBiFjtVHJhUZ/gELGYGZMUXBlAom1WyK8pNrD3+I8kCVGp5Ss5oB+Zqo7Az5xCx/z+0i+Y40A==
 
-"@keystonehq/hw-transport-nodeusb@0.1.0-alpha.1":
-  version "0.1.0-alpha.1"
-  resolved "https://registry.npmjs.org/@keystonehq/hw-transport-nodeusb/-/hw-transport-nodeusb-0.1.0-alpha.1.tgz#f246af10c2b7d6bf465f175c3a9505701e9ec586"
-  integrity sha512-dlvJz/u388WO8ULVQXDHCZeLxtfemPHMlwWwtOn68TmqbtcqVWQ3udrdyjT02pNYXFmr2kBMMuD5ceDyhkrEUw==
+"@keystonehq/hw-transport-nodeusb@^0.1.0-alpha.1":
+  version "0.1.1"
+  resolved "https://registry.npmmirror.com/@keystonehq/hw-transport-nodeusb/-/hw-transport-nodeusb-0.1.1.tgz#85988715feb3550e72ff01d0fa23b3223ab6ec3e"
+  integrity sha512-frT2UiagwlQQJvTeBTscDPQVjxAzxxxFJW9Eynkh9FSlNNThnppV/uyXV/0Fu6Cbz6MT2v5UVbuBE8y24wppRQ==
   dependencies:
     "@keystonehq/hw-transport-error" "^0.0.2"
-    "@keystonehq/hw-transport-usb" "^0.1.0-alpha.0"
+    "@keystonehq/hw-transport-usb" "^0.1.1"
     buffer "^6.0.3"
     usb "^2.14.0"
 
@@ -1017,6 +1017,14 @@
   integrity sha512-bXRicybH9Mx1iIq7macgc//Lisqeytu51WUJVXCS49B8msfR+thJtpYs78FgEH9jBX5ufwAB7Mwo0qq3jKjLHw==
   dependencies:
     "@keystonehq/hw-transport-error" "workspace:^"
+    buffer "^6.0.3"
+
+"@keystonehq/hw-transport-usb@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.npmmirror.com/@keystonehq/hw-transport-usb/-/hw-transport-usb-0.1.1.tgz#001ea6f80da0f7644c986392b2ef6daaa4d3c23c"
+  integrity sha512-8B5OxLiwI/HHZSlQKtDWQ0AVXOxfYhI37So1/uBwLVSvpKqGC6FN6gG7vIkmZjMs7w5A1ARac5ejRuLzoCQumg==
+  dependencies:
+    "@keystonehq/hw-transport-error" "^0.0.2"
     buffer "^6.0.3"
 
 "@keystonehq/keystone-sdk@^0.8.1":
@@ -4216,11 +4224,6 @@ node-addon-api@^7.0.0:
   resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-7.1.0.tgz#71f609369379c08e251c558527a107107b5e0fdb"
   integrity sha512-mNcltoe1R8o7STTegSOHdnJNN7s5EUvhoS7ShnTHDyOSd+8H+UdWODq6qSv67PjC8Zc5JRT8+oLAMCr0SIXw7g==
 
-node-addon-api@^8.0.0:
-  version "8.2.1"
-  resolved "https://registry.npmjs.org/node-addon-api/-/node-addon-api-8.2.1.tgz#43a993f110b88e22ba48bcd65e16b92165a6b002"
-  integrity sha512-vmEOvxwiH8tlOcv4SyE8RH34rI5/nWVaigUeAUPawC6f0+HoDthwI0vkMu4tbtsZrXq6QXFfrkhjofzKEs5tpA==
-
 node-fetch@^2.6.12, node-fetch@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.7.0.tgz#d0f0fa6e3e2dc1d27efcd8ad99d550bda94d187d"
@@ -5402,22 +5405,13 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-usb@^2.11.0:
+usb@^2.11.0, usb@^2.14.0:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/usb/-/usb-2.11.0.tgz#bbb2257c65534635a450aed3754df7c8844d518e"
   integrity sha512-u5+NZ6DtoW8TIBtuSArQGAZZ/K15i3lYvZBAYmcgI+RcDS9G50/KPrUd3CrU8M92ahyCvg5e0gc8BDvr5Hwejg==
   dependencies:
     "@types/w3c-web-usb" "^1.0.6"
     node-addon-api "^7.0.0"
-    node-gyp-build "^4.5.0"
-
-usb@^2.14.0:
-  version "2.14.0"
-  resolved "https://registry.npmjs.org/usb/-/usb-2.14.0.tgz#501f18c11b00c248d607ab6b05a8c7b50eb2f21a"
-  integrity sha512-I3lzVOH21BsO6qPYvx1C7Ji08lbuM0qmsEtNGAphqlhNME5cz/vExY+jIXZl+HQIRybI/sTxdyLab5tALsL69w==
-  dependencies:
-    "@types/w3c-web-usb" "^1.0.6"
-    node-addon-api "^8.0.0"
     node-gyp-build "^4.5.0"
 
 utf-8-validate@^5.0.2:
